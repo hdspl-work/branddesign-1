@@ -2,20 +2,160 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* .p-sb {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.p-r {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.s-b {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.top-r {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.h2-r {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.h3-r {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.h2-b {
+  font-size: 32px;
+  font-weight: 700;
+} */
+
+@media (max-width: 640px) {
+  .p-sb {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .p-r {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .s-b {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .top-r {
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  .h2-r {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .h3-r {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .h2-b {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width:641px) and (max-width: 768px) {
+  .p-sb {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .p-r {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .s-b {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .top-r {
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  .h2-r {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .h3-r {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .h2-b {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 769px) {
+
+  .p-sb {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .p-r {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .s-b {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .top-r {
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .h2-r {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .h3-r {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .h2-b {
+    font-size: 32px;
+    font-weight: 700;
+  }
 }
